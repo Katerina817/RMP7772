@@ -25,7 +25,7 @@ public class TrirdThirdFragment extends Fragment {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (viewModel2.getRabbitListLiveData().getValue() != null && viewModel2.getRabbitListLiveData().getValue().size()>0) { // Проверка на null
+                if (viewModel2.getRabbitListLiveData().getValue() != null && viewModel2.getRabbitListLiveData().getValue().size()>0) {
                     viewModel2.deleteRabbitFromList();
                     Navigation.findNavController(view).navigate(R.id.action_trirdThirdFragment_to_thirdFragment);
                 }

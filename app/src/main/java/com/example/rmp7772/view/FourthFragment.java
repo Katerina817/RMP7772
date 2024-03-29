@@ -44,7 +44,6 @@ public class FourthFragment extends Fragment {
                 for (Rabbit rabbit : rabbits) {
                     items.add(new Item(rabbit.getName(),R.drawable.rabbit));
                 }
-
                 // Создаем адаптер и передаем в него список имен кроликов
                 RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
                 CustomRecyclerViewAdapter adapter = new CustomRecyclerViewAdapter(requireContext(), items);
@@ -59,7 +58,6 @@ public class FourthFragment extends Fragment {
                 });
             }
         });
-
         return view;
     }
 }

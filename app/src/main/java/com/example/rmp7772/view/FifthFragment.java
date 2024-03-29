@@ -25,19 +25,16 @@ public class FifthFragment extends Fragment {
         super(R.layout.fifthfragment);
     }
     private ShowRViewModel showRViewModel;
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         int pos=getArguments().getInt("position");
         showRViewModel = new ViewModelProvider(requireActivity()).get(ShowRViewModel.class);
-        // Наблюдаем за LiveData с кроликами и обновляем список
         showRViewModel.getRabbitListLiveData().observe(getViewLifecycleOwner(), new Observer<List<Rabbit>>() {
             @Override
             public void onChanged(List<Rabbit> rabbits) {
                 TextView infa=view.findViewById(R.id.infa);
                 Rabbit rabbit = rabbits.get(pos);
-                // Отображаем информацию о кролике в TextView
                 infa.setText("Name: " + rabbit.getName() + "\nColor: " + rabbit.getColor() + "\nEar Length: " + rabbit.getEarlength() + "\nAge: " + rabbit.getAge());
             }
         });

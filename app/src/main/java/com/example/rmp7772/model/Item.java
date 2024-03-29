@@ -1,5 +1,5 @@
 package com.example.rmp7772.model;
-
+//
 public class Item {
     private String text;
     private int picture;

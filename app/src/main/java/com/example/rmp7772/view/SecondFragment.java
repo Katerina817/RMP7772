@@ -20,22 +20,15 @@ public class SecondFragment extends Fragment {
     }
     private ShowRViewModel viewModel2;
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //viewModel = new ViewModelProvider(requireActivity()).get(CreateRViewModel.class);
         viewModel2 = new ViewModelProvider(requireActivity()).get(ShowRViewModel.class);
-
         EditText editTextName = view.findViewById(R.id.editname);
         EditText editTextAge = view.findViewById(R.id.editage);
         EditText editTextColor = view.findViewById(R.id.editcolor);
         EditText editTextLength = view.findViewById(R.id.editlength);
         Button createButton = view.findViewById(R.id.createbutton);
-
         createButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,12 +36,9 @@ public class SecondFragment extends Fragment {
                 String age = editTextAge.getText().toString();
                 String color = editTextColor.getText().toString();
                 String earlength = editTextLength.getText().toString();
-
                 //передачв данных в viewmodel
                 //viewModel.createRabbit(name, color,earlength,age);
                 viewModel2.addRabbitToList(name, color,earlength,age);
-
-
                 Navigation.findNavController(view).navigate(R.id.action_secondFragment_to_thirdFragment);
 
             }

@@ -32,15 +32,10 @@ public class ThirdFragment extends Fragment {
     public ThirdFragment() {
         super(R.layout.thirdfragment);
     }
-
     private ShowRViewModel viewModel2;
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-
-
         Button back = view.findViewById(R.id.goback);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +51,6 @@ public class ThirdFragment extends Fragment {
             }
         });
         viewModel2 = new ViewModelProvider(requireActivity()).get(ShowRViewModel.class);
-        // Наблюдаем за LiveData с кроликами и обновляем список
         AbsoluteLayout Layout = requireView().findViewById(R.id.thirdfrag);
         viewModel2.getRabbitListLiveData().observe(getViewLifecycleOwner(), new Observer<List<Rabbit>>() {
             @Override
@@ -74,12 +68,12 @@ public class ThirdFragment extends Fragment {
                     int x = random.nextInt(1200);
                     int y = random.nextInt(2200);
                     AbsoluteLayout.LayoutParams params = new AbsoluteLayout.LayoutParams(
-                            ViewGroup.LayoutParams.WRAP_CONTENT, // Ширина картинки, можно изменить по вашему желанию
-                            ViewGroup.LayoutParams.WRAP_CONTENT, // Высота картинки, можно изменить по вашему желанию
+                            ViewGroup.LayoutParams.WRAP_CONTENT,
+                            ViewGroup.LayoutParams.WRAP_CONTENT,
                             x,
                             y
                     );
-                    im.setLayoutParams(params); // Установка параметров расположения
+                    im.setLayoutParams(params);
                     Layout.addView(im);
                 }
 
