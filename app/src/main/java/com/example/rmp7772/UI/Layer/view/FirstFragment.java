@@ -1,4 +1,4 @@
-package com.example.rmp7772.view;
+package com.example.rmp7772.UI.Layer.view;
 
 import android.os.Bundle;
 import android.view.View;

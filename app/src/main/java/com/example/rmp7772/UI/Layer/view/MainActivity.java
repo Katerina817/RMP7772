@@ -1,4 +1,4 @@
-package com.example.rmp7772.view;
+package com.example.rmp7772.UI.Layer.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,12 +1,10 @@
-package com.example.rmp7772.viewmodel;
-
-import android.util.Log;
+package com.example.rmp7772.UI.Layer.viewmodel;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.rmp7772.model.Rabbit;
+import com.example.rmp7772.Data.Layer.Model.Rabbit;
 
 import java.util.ArrayList;
 import java.util.List;

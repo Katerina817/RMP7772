@@ -1,4 +1,4 @@
-package com.example.rmp7772.view;
+package com.example.rmp7772.UI.Layer.view;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
 import com.example.rmp7772.R;
-import com.example.rmp7772.viewmodel.ShowRViewModel;
+import com.example.rmp7772.UI.Layer.viewmodel.ShowRViewModel;
 
 public class TrirdThirdFragment extends Fragment {
     public TrirdThirdFragment(){super(R.layout.thirdthirdfragment);}

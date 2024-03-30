@@ -1,4 +1,4 @@
-package com.example.rmp7772.model;
+package com.example.rmp7772.Data.Layer.Model;
 
 public class Rabbit {
     private String name;

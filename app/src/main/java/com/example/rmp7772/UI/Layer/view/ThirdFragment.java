@@ -1,30 +1,23 @@
-package com.example.rmp7772.view;
+package com.example.rmp7772.UI.Layer.view;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsoluteLayout;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.rmp7772.R;
-import com.example.rmp7772.model.Item;
-import com.example.rmp7772.model.Rabbit;
-import com.example.rmp7772.viewmodel.ShowRViewModel;
+import com.example.rmp7772.Data.Layer.Model.Rabbit;
+import com.example.rmp7772.UI.Layer.viewmodel.ShowRViewModel;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 

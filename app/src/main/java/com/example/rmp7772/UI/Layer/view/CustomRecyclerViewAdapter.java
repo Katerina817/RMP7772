@@ -1,4 +1,4 @@
-package com.example.rmp7772.view;
+package com.example.rmp7772.UI.Layer.view;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.rmp7772.Data.Layer.Model.Item;
 import com.example.rmp7772.R;
-import com.example.rmp7772.model.Item;
 
 import java.util.List;
 interface ItemClickListener {
